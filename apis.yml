@@ -1,25 +1,70 @@
 aid: airflows
+
 name: Airflows
-description: 'Airflows is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by adaraventurepartners) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://airflows.com/assets/og/og-default.jpg
+
+description: 'Airflows provides AI-driven operational intelligence solutions for enterprises across sectors such as public administration, banking, insurance, healthcare, utilities, and industry. Their platform enables private, sovereign AI that runs on customer data without data leakage, offering audit‑ready compliance, role‑based access controls, and customizable workflows to turn AI insights into actionable decisions.'
+
 url: https://raw.githubusercontent.com/api-evangelist/airflows/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- AI
+- Enterprise
+- SaaS
+- Operational-Intelligence
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- adaraventurepartners
+
 common:
+- type: Hosts
+  url: hosts/airflows-hosts.yml
+- type: TermsOfService
+  url: https://airflows.com/en/terms
+- type: Security
+  url: https://airflows.com/en/security
+- type: Newsroom
+  url: https://airflows.com/en/news
+- type: DeveloperPortal
+  url: https://portal.airflows.com/
+- type: DomainSecurity
+  url: security/airflows-domain-security.yml
 - type: Website
   url: https://airflows.com
+- type: Blog
+  url: https://airflows.com/blog
+- type: Documentation
+  url: https://airflows.com/privacidad
+- type: Support
+  url: https://airflows.com/contacto
+- type: About
+  url: https://airflows.com/compania
+
+apis: []
+
+x-backed-by:
+- adaraventurepartners
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

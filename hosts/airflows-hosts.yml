@@ -1,0 +1,56 @@
+generated: '2026-10-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - portal
+  - website
+hosts:
+- host: airflows.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Security
+  - Newsroom
+  - Website
+  - Blog
+  - Documentation
+  - Support
+  - About
+  serves: []
+  registrable_domain: airflows.com
+  role: website
+  relation: own
+- host: api.airflows.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: airflows.com
+  role: api
+  relation: own
+- host: portal.airflows.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: airflows.com
+  role: portal
+  relation: own

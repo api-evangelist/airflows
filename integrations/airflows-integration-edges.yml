@@ -1,0 +1,16 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/airflows/integrations
+- https://n8n.io/integrations/airflows/
+- https://composio.dev/toolkits/airflows
+- https://monid.ai/tools/airflows
+checked:
+- https://composio.dev/toolkits/airflows
+- https://monid.ai/tools/airflows
+- https://n8n.io/integrations/airflows/
+- https://zapier.com/apps/airflows/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
